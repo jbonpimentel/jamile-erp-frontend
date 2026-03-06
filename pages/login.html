@@ -4,25 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - J'amile Essence Care</title>
+    <title>Login | J'amile Essence Care</title>
     <link rel="stylesheet" href="../src/css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="login-card">
-        <h2>J'amile Essence Care</h2>
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+<body class="login-page">
+    <main class="login-panel">
+        <section class="visual-side">
+            <div class="visual-content">
+                <div class="logo-wrapper">
+                    <span class="logo-j">J'</span><span class="logo-amile">amile</span>
+                    <p class="logo-subtitle">Essence Care ERP</p>
+                </div>
+                <h2>Gestão inteligente<br>para sua essência.</h2>
+                <p class="description">Acompanhe vendas, clientes e estoque com a sofisticação que seu negócio merece.
+                </p>
             </div>
-            <div class="input-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" placeholder="Digite sua senha" required>
+        </section>
+
+        <section class="form-side">
+            <div class="form-box">
+                <header>
+                    <h3>Acesse sua Conta</h3>
+                    <p>Entre com suas credenciais corporativas</p>
+                </header>
+
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="email">E-mail Corporativo</label>
+                        <input type="email" id="email" placeholder="nome@exemplo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn-login">Acessar Sistema</button>
+                </form>
+
+                <footer>
+                    <p>&copy; 2026 J'amile Essence. Gestão de Alta Performance.</p>
+                </footer>
             </div>
-            <button type="submit" class="btn-primary">Entrar no Sistema</button>
-        </form>
-    </div>
+        </section>
+    </main>
 
     <script src="../src/js/auth/login.js"></script>
 </body>
