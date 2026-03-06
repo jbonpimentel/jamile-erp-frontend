@@ -48,3 +48,41 @@ function abrirModal() {
     console.log("Abrindo modal de cadastro...");
     // Aqui entrará a lógica do formulário de inserção
 }
+
+function abrirModal() {
+    document.getElementById('modalCliente').style.display = 'flex';
+}
+
+function fecharModal() {
+    document.getElementById('modalCliente').style.display = 'none';
+    document.getElementById('formCadastroCliente').reset();
+}
+
+document.getElementById('formCadastroCliente').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const novoCliente = {
+        nome: document.getElementById('cadNome').value,
+        email: document.getElementById('cadEmail').value,
+        telefone: document.getElementById('cadTelefone').value,
+        cpf: document.getElementById('cadCpf').value
+    };
+
+    try {
+        const response = await fetch('http://localhost:3000/api/clientes', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(novoCliente)
+        });
+
+        if (response.ok) {
+            alert('Cliente cadastrado com sucesso!');
+            fecharModal();
+            carregarClientes(); // Recarrega a tabela automaticamente
+        } else {
+            alert('Erro ao cadastrar.');
+        }
+    } catch (err) {
+        console.error(err);
+    }
+});
