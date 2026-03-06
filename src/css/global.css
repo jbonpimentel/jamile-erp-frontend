@@ -1,0 +1,94 @@
+:root {
+    /* Cores extraídas da sua paleta "Natureza Refinada" */
+    --primary-purple: #C688DB;
+    /* Roxo Principal */
+    --light-purple: #D9CBEF;
+    /* Roxo Lavanda */
+    --secondary-green: #0C391F;
+    /* Verde Escuro Sofisticado */
+    --accent-green: #C6D383;
+    /* Verde Lima Suave */
+    --bg-cream: #FAF7F1;
+    /* Fundo Creme */
+    --accent-yellow: #FFF2B0;
+    /* Detalhes Amarelo */
+    --text-black: #2B2B2B;
+    /* Texto Quase Preto */
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-cream);
+    /* Fundo principal da paleta */
+    color: var(--text-black);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card de Login Profissional */
+.login-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(12, 57, 31, 0.1);
+    /* Sombra com tom do verde escuro */
+    width: 100%;
+    max-width: 400px;
+    border-bottom: 8px solid var(--secondary-green);
+    /* Detalhe em Verde Escuro */
+}
+
+h2 {
+    color: var(--secondary-green);
+    /* Títulos em Verde Escuro */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 1.2rem;
+    border: 1.5px solid var(--light-purple);
+    /* Borda em Roxo Lavanda */
+    border-radius: 8px;
+    background-color: var(--bg-cream);
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: var(--primary-purple);
+    /* Destaque no Roxo Principal ao clicar */
+}
+
+.btn-primary {
+    background-color: var(--primary-purple);
+    /* Botão em Roxo */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b574ca;
+    /* Um tom mais escuro de roxo */
+    transform: translateY(-2px);
+}
