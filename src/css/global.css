@@ -179,3 +179,67 @@ footer p {
     color: #999;
     font-weight: 400;
 }
+
+/* ... (Seus estilos de login anteriores permanecem) ... */
+
+.admin-page {
+    background-color: var(--bg-cream);
+    padding: 40px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--light-purple);
+}
+
+.logo-j {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--secondary-green);
+}
+
+.logo-amile {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-purple);
+}
+
+.table-wrapper {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(12, 57, 31, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: var(--secondary-green);
+    color: white;
+}
+
+th {
+    padding: 18px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid var(--bg-cream);
+    color: var(--text-dark);
+}
+
+tr:hover {
+    background-color: var(--light-purple);
+    transition: 0.2s;
+}

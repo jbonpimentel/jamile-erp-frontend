@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Clientes | J'amile Essence Care</title>
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="admin-page">
+    <div class="container">
+        <header class="header-main">
+            <div class="brand-section">
+                <span class="logo-j">J'</span><span class="logo-amile">amile</span>
+                <p>Gestão de Clientes</p>
+            </div>
+            <button class="btn-primary" onclick="abrirModal()">+ Novo Cliente</button>
+        </header>
+
+        <section class="table-wrapper">
+            <table id="clientesTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>CPF</th>
+                    </tr>
+                </thead>
+                <tbody id="listaClientes">
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="../src/js/modules/clientes.js"></script>
+</body>
+
+</html>
